@@ -1,0 +1,113 @@
+/*
+* Author - Sonu kumar kushwaha
+* Email - flyingsonu736@gmail.com
+*/
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #404142;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  background-color: orange;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 800;
+  font-family: "Roboto", sans-serif;
+  text-transform: capitalize;
+  letter-spacing: -0.1px;
+  opacity: 0.7;
+}
+.main .text {
+  width: 70%;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  margin-right: 20px;
+  border: 3px solid #f6f6f6;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.text .wish-text {
+  width: 70%;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  margin-right: 20px;
+  border: 3px solid #f6f6f6;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.main .wish-text:hover {
+  box-shadow: 3px 3px 10px #ccc;
+  transform: translateY(-10px);
+}
+
+.wish-text {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.github-logo1 {
+  font-size: 1em;
+  font-weight: 800;
+  padding: 0px;
+  margin: 0px;
+}
+
+#copyright .lookbook {
+  opacity: 1;
+}
+
+#copyright a {
+  color: #616161;
+}
+
+#copyright a:hover {
+  color: #356492;
+}
+
+#copyright .fa-heart {
+  padding: 0px;
+  margin: 0px;
+  font-size: 1em;
+  font-weight: normal;
+  bottom: auto;
+}
+
+/* 
+ ===Custom Media Queries===
+ */
+
+/* Mobile */
+
+@media (max-width: 320px) {
+  .main .wish-text {
+    width: 100%;
+  }
+}
+
+/* iPad Portrait */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .main .wish-text {
+    width: 49%;
+    margin-right: 7px;
+  }
+}
+
+/* iPad Landscape */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .main .wish-text {
+    width: 49%;
+    margin-right: 9px;
+  }
+}
