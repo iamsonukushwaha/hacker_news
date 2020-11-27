@@ -29,6 +29,7 @@ function getWish() {
             h3.textContent = data.title;
             const a = document.createElement('a');
             a.href = data.url;
+            a.target = "_blank";
             a.textContent = "Look Up Here";
             newData.appendChild(h3);
             newData.appendChild(a);
