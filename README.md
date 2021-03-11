@@ -2,9 +2,7 @@
 
 See live demo **[Here](https://flyingsonu122.github.io/hacker_news/)**
 
-
-
-<br><br><br><br><br><br>
+<br><br><br><br>
 
 
 **MIT &copy; [Sonu kumar kushwaha](https://github.com/flyingsonu122)**
