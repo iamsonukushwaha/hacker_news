@@ -1,49 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="author" content="Sonu Kumar Kushwaha">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Best place to see technical News">
-        <meta name="keywords" content="Hacker News">
-        <title> Hacker News </title>
-        <link rel="stylesheet" href="./style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Sonu Kumar Kushwaha">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Best place to see technical News">
+    <meta name="keywords" content="Hacker News">
+    <title>Hacker News</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
 
-    <body>
+<body>
+    <div class="bg-glow bg-glow-one"></div>
+    <div class="bg-glow bg-glow-two"></div>
 
-        <div class="main">
-            <center>
+    <main class="app-shell">
+        <header class="hero">
+            <p class="eyebrow">Live feed from top stories</p>
+            <h1>Hacker News Pulse</h1>
+            <p class="subtitle">Curated by the internet in real time. Fast links, clean ranking, and rich metadata.</p>
 
-                <br><br>
-                <h3>Hacker News</h3>
-                <br><br>
+            <div class="hero-actions">
+                <button id="refreshBtn" class="refresh-btn" type="button">Refresh feed</button>
+                <p id="updatedAt" class="updated-at">Loading...</p>
+            </div>
 
-                <div class="text" id="text">
+            <div class="stats-grid">
+                <article class="stat-card">
+                    <p class="stat-label">Stories Loaded</p>
+                    <p class="stat-value" id="storyCount">0</p>
+                </article>
+                <article class="stat-card">
+                    <p class="stat-label">First Rank</p>
+                    <p class="stat-value">#1</p>
+                </article>
+                <article class="stat-card">
+                    <p class="stat-label">Source</p>
+                    <p class="stat-value">HN API</p>
+                </article>
+            </div>
+        </header>
 
-                </div>
+        <section id="text" class="stories" aria-live="polite"></section>
 
-                <br><br><br><br>
-                <div id="copyright">
-                    <hr>
-                    <span class="github-logo1">
-                        Made by
-                        <span class="lookbook">
-                            <a href="https://singlebucks.blogspot.com/" target="_blank">Sonu Kushwaha</a>
-                        </span> &copy; 2025
-                    </span>
-
-                </div>
-
-            </center>
-
-        </div>
-
-    </body>
+        <footer id="copyright">
+            <span>
+                Built by
+                <a href="https://singlebucks.blogspot.com/" target="_blank" rel="noopener noreferrer">Sonu Kushwaha</a>
+                
+            </span>
+        </footer>
+    </main>
 
     <script src="./main.js"></script>
 
     <!--- Made with love by Sonu kumar kushwaha -->
+</body>
 
 </html>
